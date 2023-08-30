@@ -328,16 +328,16 @@ img, video {
   height: 100vh;
 }
 
+.max-h-\[50px\] {
+  max-height: 50px;
+}
+
 .w-12 {
   width: 3rem;
 }
 
-.max-w-\[740px\] {
-  max-width: 740px;
-}
-
-.max-w-\[540px\] {
-  max-width: 540px;
+.max-w-\[50px\] {
+  max-width: 50px;
 }
 
 .max-w-\[640px\] {
@@ -469,11 +469,6 @@ img, video {
 
 .tracking-widest {
   letter-spacing: .1em;
-}
-
-.text-\[\#8996b8\] {
-  --tw-text-opacity: 1;
-  color: rgb(137 150 184 / var(--tw-text-opacity));
 }
 
 .text-\[\#EDEDED\] {
