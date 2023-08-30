@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaarlo Sasiang</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Scripts -->
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body class="bg-main-dark font-Inter">
+    <header class="flex items-center justify-between py-5 px-14">
+      <!-- Logo -->
+      <h1
+        class="flex items-center justify-center text-primary text-2xl border-2 p-2 w-12 h-12 rounded-full"
+      >
+        K
+      </h1>
+      <nav>
+        <ul class="flex items-center gap-10 text-sm">
+          <li>
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-unhovered hover:text-white"
+              ><span class="text-primary">01.</span> About</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-unhovered hover:text-white"
+              ><span class="text-primary">02.</span> Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-unhovered hover:text-white"
+              ><span class="text-primary">03.</span> Work</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-unhovered hover:text-white"
+              ><span class="text-primary">04.</span> Contact</a
+            >
+          </li>
+          <li
+            class="transition-all duration-300 hover:-translate-y-[4px] hover:-translate-x-[4px]"
+          >
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-primary border rounded px-4 py-2 hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- My links -->
+    <div class="fixed bottom-0 left-14">
+      <ul class="links-list flex flex-col gap-8 items-center">
+        <li>
+          <a href="#">
+            <i
+              data-feather="github"
+              class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              data-feather="instagram"
+              class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              data-feather="linkedin"
+              class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              data-feather="facebook"
+              class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
+            ></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- My Email -->
+    <div class="fixed bottom-0 right-14">
+      <div class="links-list flex flex-col gap-8 items-center">
+        <a
+          href="mailto:sasiang64@gmail.com"
+          style="writing-mode: vertical-rl"
+          class="text-unhovered font-FiraCode text-xs tracking-widest transition-all duration-300 hover:text-primary"
+        >
+          karloruy.sasiang@dorsu.edu.ph
+        </a>
+      </div>
+    </div>
+
+    <div id="content" class="container mx-auto h-screen -mt-[88px]">
+      <div class="px-24 h-full flex flex-col justify-center">
+        <span class="text-primary text-lg font-FiraCode">Hi, my name is</span>
+        <h1
+          class="transition-all duration-300 font-bold text-[#EDEDED] text-[40px] lg:text-[70px] 2xl:text-[80px]"
+        >
+          Kaarlo Sasiang
+        </h1>
+        <h2
+          class="transition-all duration-300 font-bold text-secondary leading-[30px] lg:leading-[60px] 2xl:leading-[80px] text-[30px] lg:text-[60px] 2xl:text-[80px] -mt-2 lg:-mt-5"
+        >
+          a frontend developer / IT student
+        </h2>
+        <p
+          class="max-w-[640px] mt-2 lg:mt-5 text-secondary text-sm lg:text-base"
+        >
+          In 2021, my journey as a developer began with JavaScript and
+          procedural PHP, bolstered by MySQL for databases. Gradually, I
+          embraced jQuery for crafting dashboards and app integrations. Now, I'm
+          diving deep into ReactJS, mastering the realm of frontend development.
+        </p>
+        <div class="mt-10">
+          <a
+            href="javascript:;"
+            class="transition-all font-FiraCode duration-300 text-primary border rounded px-5 py-2 text-sm lg:text-base lg:px-10 lg:py-5 hover:shadow-[3px_3px_0_0_rgba(61,241,218)] hover:-translate-y-[4px] hover:-translate-x-[4px]"
+            >Learn more about me!</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/*html",
+    "build": "parcel build ./src/*html --public-url ./ --no-source-maps"
+  },
+  "keywords": [
+    "portfolio",
+    "kaarlo"
+  ],
+  "author": "Kaarlo Sasiang",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
