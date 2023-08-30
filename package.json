@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My portfolio",
-  "main": "index.js",
   "scripts": {
     "start": "parcel ./src/*html",
     "build": "parcel build ./src/*html --public-url ./ --no-source-maps"
