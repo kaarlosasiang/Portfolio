@@ -28,7 +28,7 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body class="bg-main-dark font-Inter">
-    <header class="flex items-center justify-between py-5 px-14">
+    <header class="flex items-center justify-between py-5 px-10 md:px-14">
       <!-- Logo -->
       <!-- <h1
         class="flex items-center justify-center text-primary text-2xl border-2 p-2 w-12 h-12 rounded-full"
@@ -37,7 +37,7 @@
       </h1> -->
       <img src="./mylogo.png" class="max-w-[50px] max-h-[50px]" alt="" />
       <nav>
-        <ul class="flex items-center gap-10 text-sm">
+        <ul class="hidden md:flex items-center gap-10 text-sm">
           <li>
             <a
               href="javascript:;"
@@ -76,11 +76,22 @@
             >
           </li>
         </ul>
+        <ul class="felx md:hidden items-center gap-10 text-sm">
+          <li
+            class="transition-all duration-300 hover:-translate-y-[4px] hover:-translate-x-[4px]"
+          >
+            <a
+              href="javascript:;"
+              class="transition-all duration-300 text-primary border rounded px-4 py-2 hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
+              >Resume</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
     <!-- My links -->
-    <div class="fixed bottom-0 left-14">
+    <div class="fixed bottom-0 left-10 xl:left-14 hidden md:flex">
       <ul class="links-list flex flex-col gap-8 items-center">
         <li>
           <a href="#">
@@ -117,7 +128,7 @@
       </ul>
     </div>
     <!-- My Email -->
-    <div class="fixed bottom-0 right-14">
+    <div class="fixed bottom-0 right-10 xl:14 hidden md:flex">
       <div class="links-list flex flex-col gap-8 items-center">
         <a
           href="mailto:sasiang64@gmail.com"
@@ -130,32 +141,35 @@
     </div>
 
     <div id="content" class="container mx-auto h-screen -mt-[88px]">
-      <div class="px-24 h-full flex flex-col justify-center">
-        <span class="text-primary text-lg font-FiraCode">Hi, my name is</span>
+      <div
+        class="px-10 md:px-20 lg:px-30 xl:px-36 h-full flex flex-col justify-center gap-2 md:gap-5"
+      >
+        <p class="text-primary text-lg font-FiraCode">Hi, my name is</p>
         <h1
-          class="transition-all duration-300 font-bold text-[#EDEDED] text-[40px] lg:text-[70px] 2xl:text-[80px]"
+          class="transition-all duration-300 font-bold text-[#EDEDED] leading-[40px] text-[40px] md:text-[60px] lg:text-[70px] 2xl:text-[80px]"
         >
           Kaarlo Sasiang
         </h1>
         <h2
-          class="transition-all duration-300 font-bold text-secondary leading-[30px] lg:leading-[60px] 2xl:leading-[80px] text-[30px] lg:text-[60px] 2xl:text-[80px] -mt-2 lg:-mt-5"
+          class="transition-all duration-300 font-bold text-secondary leading-[40px] lg:leading-[60px] 2xl:leading-[80px] text-[30px] md:text-[50px] xl:text-[60px] 2xl:text-[80px]"
         >
           a frontend developer / IT student
         </h2>
         <p
-          class="max-w-[640px] mt-2 lg:mt-5 text-secondary text-sm lg:text-base"
+          class="max-w-[640px] text-secondary text-sm lg:text-base"
         >
-          In 2021, my journey as a developer began with JavaScript and
-          procedural PHP, bolstered by MySQL for databases. Gradually, I
-          embraced jQuery for crafting dashboards and app integrations. Now, I'm
-          diving deep into ReactJS, mastering the realm of frontend development.
+          I'm an aspiring IT student with a strong foundation in JavaScript, and
+          I'm currently focused on mastering the ReactJS framework to build
+          dynamic and user-friendly web applications.
         </p>
-        <div class="mt-10">
-          <a
+        <div class="mt-5">
+          <button
             href="javascript:;"
-            class="transition-all font-FiraCode duration-300 text-primary border rounded px-5 py-2 text-sm lg:text-base lg:px-10 lg:py-5 hover:shadow-[3px_3px_0_0_rgba(61,241,218)] hover:-translate-y-[4px] hover:-translate-x-[4px]"
-            >Learn more about me!</a
+            class="flex items-center gap-2 transition-all duration-300 text-primary border rounded px-6 py-3 hover:-translate-y-[4px] hover:-translate-x-[4px] hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
           >
+            Learn more about me
+            <i data-feather="chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>
