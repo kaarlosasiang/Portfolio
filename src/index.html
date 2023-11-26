@@ -29,20 +29,14 @@
   </head>
   <body class="bg-main-dark font-Inter">
     <header class="flex items-center justify-between py-5 px-10 md:px-14">
-      <!-- Logo -->
-      <!-- <h1
-        class="flex items-center justify-center text-primary text-2xl border-2 p-2 w-12 h-12 rounded-full"
-      >
-        K
-      </h1> -->
-      <img src="./mylogo.png" class="max-w-[50px] max-h-[50px]" alt="" />
+      <img src="./img/mylogo.png" class="max-w-[50px] max-h-[50px]" alt="" />
       <nav>
         <ul class="hidden md:flex items-center gap-10 text-sm">
           <li>
             <a
-              href="javascript:;"
+              href="#about-me"
               class="transition-all duration-300 text-unhovered hover:text-primary"
-              ><span class="text-primary">01.</span> About</a
+              ><span class="text-primary">01.</span> About Me</a
             >
           </li>
           <li>
@@ -102,7 +96,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/kaarlo.sasiang/" target="_blank">
             <i
               data-feather="instagram"
               class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
@@ -110,7 +104,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/kaarlo-sasiang" target="_blank">
             <i
               data-feather="linkedin"
               class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
@@ -118,7 +112,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.facebook.com/kaarloruy.sasiang" target="_blank">
             <i
               data-feather="facebook"
               class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] hover:text-primary"
@@ -127,13 +121,14 @@
         </li>
       </ul>
     </div>
+
     <!-- My Email -->
     <div class="fixed bottom-0 right-10 xl:14 hidden md:flex">
       <div class="links-list flex flex-col gap-8 items-center">
         <a
           href="mailto:karloruy.sasiang@dorsu.edu.ph"
           style="writing-mode: vertical-rl"
-          class="text-unhovered font-FiraCode text-xs tracking-widest transition-all duration-300 hover:text-primary"
+          class="transition-all duration-300 text-unhovered hover:translate-y-[-3px] font-FiraCode text-xs tracking-widest hover:text-primary"
         >
           karloruy.sasiang@dorsu.edu.ph
         </a>
@@ -155,26 +150,105 @@
         >
           A frontend developer / IT student
         </h2>
-        <p class="max-w-[640px] text-secondary text-justify text-sm lg:text-base">
+        <p
+          class="max-w-[640px] text-secondary text-justify text-sm lg:text-base"
+        >
           I'm an aspiring IT student with a strong foundation in JavaScript, and
           I'm currently focused on mastering the ReactJS framework to build
           dynamic and user-friendly web applications.
         </p>
         <div class="mt-5">
-          <button
-            href="javascript:;"
-            class="flex items-center gap-2 transition-all duration-300 text-primary border rounded px-4 py-2 hover:-translate-y-[4px] hover:-translate-x-[4px] hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
+          <a
+            href="#about-me"
+            class="inline-flex items-center gap-2 transition-all duration-300 text-primary border rounded px-4 py-2 hover:-translate-y-[4px] hover:-translate-x-[4px] hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
           >
             Learn more about me
             <i data-feather="chevron-right"></i>
-          </button>
+        </a>
         </div>
       </div>
 
       <div
-        class="px-10 md:px-20 lg:px-30 xl:px-36 h-full flex flex-col justify-center gap-2 md:gap-5"
+        class="px-10 md:px-20 lg:px-30 xl:px-36 py-20 text-white flex flex-col justify-center gap-2 md:gap-5"
+        id="about-me"
       >
-        About Me
+        <!-- Section Title -->
+        <div class="flex items-center section-title">
+          <h2 class="text-2xl font-FiraCode font-medium">
+            <span class="text-primary font-normal">01.</span> About Me
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 mt-3 gap-10">
+          <div>
+            <p class="font-light text-secondary text-justify">
+              Hey there! I'm
+              <span class="text-primary">Kaarlo Ruy P. Sasiang</span>, a web
+              developer passionate about turning code into real experiences. I
+              started playing with HTML, CSS, JavaScript, and PHP back in Grade
+              12, and since then, I've been part of two companies as a frontend
+              web developer.
+
+              <br />
+              <br />
+
+              Currently, I'm deep into mastering ReactJS. Beyond work, I'm also
+              a proud member of the development team at
+              <span class="text-primary">CodeByters</span>, a school
+              organization where we're all about making cool things happen with
+              code.
+
+              <br />
+              <br />
+              Here are a few technologies I’ve been working with recently:
+            </p>
+
+            <ul
+              class="grid text-xs gap-2 mt-3 font-FiraCode"
+              style="grid-template-columns: repeat(2, minmax(140px, 200px))"
+            >
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                JavaScript (ES6+)
+              </li>
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                WordPress & Wix
+              </li>
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                ReacJS (basic)
+              </li>
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                Procedural PHP
+              </li>
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                HTML5 & CSS3
+              </li>
+              <li
+                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+              >
+                Tailwind CSS
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <div class="border border-primary rounded absolute">
+              <img
+                src="./img/profile-picture.jpeg"
+                class="max-w-[300px] rounded -translate-y-[10px] -translate-x-[10px]"
+                alt="Kaarlo Sasiang"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

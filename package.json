@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio",
   "scripts": {
-    "start": "(rm -rf dist .parcel-cache || rmdir /s /q dist 2>nul && rmdir /s /q .parcel-cache 2>nul) & npx parcel ./src/*html",
+    "start": "(rm -rf dist .parcel-cache || rmdir /s /q dist && rmdir /s /q .parcel-cache) & npx parcel ./src/*html",
     "build": "parcel build ./src/*html --public-url ./ --no-source-maps"
   },
   "keywords": [
