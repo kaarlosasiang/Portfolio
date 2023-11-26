@@ -28,10 +28,12 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body class="bg-main-dark font-Inter">
-    <header class="flex items-center justify-between py-5 px-10 md:px-14">
+    <header
+      class="bg-main-dark/[.30] flex items-center justify-between h-[80px] px-10 md:px-14 w-full fixed top-0 transition-all duration-300"
+    >
       <img src="./img/mylogo.png" class="max-w-[50px] max-h-[50px]" alt="" />
       <nav>
-        <ul class="hidden md:flex items-center gap-10 text-sm">
+        <ul class="hidden md:flex items-center gap-10 text-sm font-FiraCode">
           <li>
             <a
               href="#about-me"
@@ -137,11 +139,9 @@
 
     <div
       id="content"
-      class="container mx-auto h-screen max-w-[1000px] -mt-[88px]"
+      class="container mx-auto h-screen max-w-[1000px] -mt-[88px] px-20 xl:px-0"
     >
-      <div
-        class="h-full flex flex-col justify-center gap-2 md:gap-5 px-20 xl:px-0"
-      >
+      <div class="h-full flex flex-col justify-center gap-2 md:gap-5">
         <p class="text-primary text-lg font-FiraCode">Hi, my name is</p>
         <h1
           class="transition-all duration-300 font-bold text-[#EDEDED] leading-[40px] text-[50px] md:text-[60px] lg:text-[70px]"
@@ -177,7 +177,16 @@
           </h2>
         </div>
 
-        <div class="grid grid-cols-2 mt-5 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-10">
+          <div class="justify-center xl:justify-end flex md:hidden">
+            <div class="border border-primary rounded">
+              <img
+                src="./img/profile-picture.jpeg"
+                class="max-w-[300px] rounded -translate-y-[10px] -translate-x-[10px]"
+                alt="Kaarlo Sasiang"
+              />
+            </div>
+          </div>
           <div>
             <p class="font-light text-secondary text-justify">
               Hey there! I'm
@@ -237,7 +246,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex justify-center">
+          <div class="justify-center xl:justify-end hidden md:flex">
             <div class="border border-primary rounded absolute">
               <img
                 src="./img/profile-picture.jpeg"

@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 .section-title::after {
   content: "";
   background-color: #444;
-  width: 200px;
+  width: 100px;
   height: 1px;
   margin: 0 20px;
   display: block;
