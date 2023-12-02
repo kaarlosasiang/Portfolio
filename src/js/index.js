@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
 const sendEmail = async () => {
   try {
     const data = await resend.emails.send({
-      from: "kaarlosasiang.online",
+      from: "Acme <onboarding@resend.dev>",
       to: ["sasiang64@gmail.com"],
       subject: "Hello World",
       html: "<strong>It works!</strong>",
