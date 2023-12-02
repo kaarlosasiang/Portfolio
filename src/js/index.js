@@ -1,3 +1,6 @@
+import { Resend } from "resend";
+const resend = new Resend("re_123456789");
+
 feather.replace();
 
 function smoothScroll(target) {
@@ -15,7 +18,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 let header = document.querySelector("header");
-console.log(header);
 window.addEventListener("scroll", function () {
   // Check if the page has been scrolled
   if (window.scrollY > 10) {
@@ -28,3 +30,20 @@ window.addEventListener("scroll", function () {
     header.classList.remove("shadow-lg");
   }
 });
+
+const sendEmail = async () => {
+  try {
+    const data = await resend.emails.send({
+      from: "kaarlosasiang.online",
+      to: ["sasiang64@gmail.com"],
+      subject: "Hello World",
+      html: "<strong>It works!</strong>",
+    });
+
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+sendEmail();
