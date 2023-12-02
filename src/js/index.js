@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-const resend = new Resend("re_123456789");
+const resend = new Resend("re_8gsZw7vi_NBKepdQYiHoBxRnARUuXsxFA");
 
 feather.replace();
 
@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
 const sendEmail = async () => {
   try {
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "no-reply@kaarlosasiang.online",
       to: ["sasiang64@gmail.com"],
       subject: "Hello World",
       html: "<strong>It works!</strong>",
