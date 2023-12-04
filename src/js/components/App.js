@@ -6,6 +6,10 @@ import SocMedLinks from "./SocMedLinks";
 class App {
   appContainer = document.getElementById("app");
 
+  constructor() {
+    console.log("App");
+  }
+
   render() {
     this.appContainer.innerHTML = "";
     this.appContainer.innerHTML = this.generateMarkup();

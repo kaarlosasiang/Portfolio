@@ -1,13 +1,13 @@
 import App from "./components/App";
-
-feather.replace();
+// import "../../node_modules/feather-icons/dist/feather.js";
 
 const init = () => {
-  feather.replace();
   App.render();
   App.handleSmoothScrolling();
   App.handleHeaderBlurEffect();
+  
   // Initialize Feather Icons
+  feather.replace();
 };
 
 init();
