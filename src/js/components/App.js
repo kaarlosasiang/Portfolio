@@ -2,6 +2,7 @@ import AboutMe from "./AboutMe";
 import Header from "./Header";
 import Hero from "./Hero";
 import SocMedLinks from "./SocMedLinks";
+import img_preview from "url:../../img/img-preview.png";
 
 class App {
   appContainer = document.getElementById("app");
@@ -17,7 +18,7 @@ class App {
 
   generateMarkup() {
     return `
-    <img src="./img/img-preview.png" class="hidden" alt="" />
+    <img src="${img_preview}" class="hidden" alt="" />
 
     ${Header()}
 
