@@ -1,6 +1,6 @@
 import profile_picture from "url:../../img/kaarlo.jpg";
 
-export default AboutMe = () => {
+export default function AboutMe() {
   const skills = [
     "JavaScript (ES6+)",
     "ReactJS (Still Learning)",
@@ -87,4 +87,4 @@ export default AboutMe = () => {
         </div>
     </section>    
     `;
-};
+}
