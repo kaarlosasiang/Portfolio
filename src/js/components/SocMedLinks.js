@@ -1,4 +1,4 @@
-export default SocMedLinks = () => {
+export default function SocMedLinks() {
   return `
     <!-- My links -->
     <div class="fixed bottom-0 left-10 xl:left-14 hidden md:flex">
@@ -38,4 +38,4 @@ export default SocMedLinks = () => {
         </ul>
     </div>
   `;
-};
+}

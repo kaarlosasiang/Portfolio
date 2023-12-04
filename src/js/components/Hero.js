@@ -1,4 +1,4 @@
-export default Hero = () => {
+export default function Hero() {
   return `
     <section class="h-full flex flex-col justify-center gap-2 md:gap-5">
         <p class="text-primary text-lg font-FiraCode">Hi, my name is</p>
@@ -30,4 +30,4 @@ export default Hero = () => {
         </div>
     </section>
   `;
-};
+}

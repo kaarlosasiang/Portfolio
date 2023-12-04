@@ -1,6 +1,6 @@
 import logo from "url:../../img/mylogo.png";
 
-export default Header = () => {
+export default function Header() {
   return `
     <header
     class="z-10 bg-main-dark/[.30] flex items-center justify-between h-[80px] px-10 md:px-14 w-full fixed top-0 transition-all duration-300"
@@ -61,4 +61,4 @@ export default Header = () => {
         </nav>
     </header>        
     `;
-};
+}
