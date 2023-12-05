@@ -1,6 +1,25 @@
 import logo from "url:../../img/mylogo.png";
 
 export default function Header() {
+  const menuItems = [
+    {
+      title: "About Me",
+      url: "#about-me",
+    },
+    {
+      title: "Experience",
+      url: "javascript:void(0);",
+    },
+    {
+      title: "Work",
+      url: "javascript:void(0);",
+    },
+    {
+      title: "Contact",
+      url: "javascript:void(0);",
+    },
+  ];
+
   return `
     <header
     class="z-10 bg-main-dark/[.30] flex items-center justify-between h-[80px] px-10 md:px-14 w-full fixed top-0 transition-all duration-300"
