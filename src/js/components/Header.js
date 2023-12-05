@@ -8,34 +8,22 @@ export default function Header() {
         <img src="${logo}" class="max-w-[50px] max-h-[50px]" alt="" />
         <nav>
             <ul class="hidden md:flex items-center gap-10 text-sm font-FiraCode">
-                <li>
-                    <a
-                    href="#about-me"
-                    class="transition-all duration-300 text-[#ededed] hover:text-primary"
-                    ><span class="text-primary">01.</span> About Me</a
-                    >
-                </li>
-                <li>
-                    <a
-                    href="javascript:;"
-                    class="transition-all duration-300 text-[#ededed] hover:text-primary"
-                    ><span class="text-primary">02.</span> Experience</a
-                    >
-                </li>
-                <li>
-                    <a
-                    href="javascript:;"
-                    class="transition-all duration-300 text-[#ededed] hover:text-primary"
-                    ><span class="text-primary">03.</span> Work</a
-                    >
-                </li>
-                <li>
-                    <a
-                    href="javascript:;"
-                    class="transition-all duration-300 text-[#ededed] hover:text-primary"
-                    ><span class="text-primary">04.</span> Contact</a
-                    >
-                </li>
+                ${menuItems
+                  .map(
+                    ({ title }, index) => `
+                    <li>
+                        <a
+                            href="#about-me"
+                            class="transition-all duration-300 text-[#ededed] hover:text-primary"
+                        >
+                            <span class="text-primary">0${
+                              index + 1
+                            }.</span> ${title}
+                        </a>
+                    </li>
+                    `
+                  )
+                  .join("")}
                 <li
                     class="transition-all duration-300 hover:-translate-y-[4px] hover:-translate-x-[4px]"
                 >
