@@ -11,6 +11,7 @@ module.exports = {
       primary: "#64ffda",
       secondary: "#6d7792",
       white: "#fff",
+      "off-white": "#ccd6f6",
       unhovered: "#999999",
     },
     extend: {},

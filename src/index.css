@@ -58,8 +58,10 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-.skill-item::before {
+.skill-item::before,
+.task-item::before {
   content: "▹";
   left: 0px;
   color: #64ffda;
 }
+

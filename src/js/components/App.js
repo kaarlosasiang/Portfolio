@@ -1,4 +1,5 @@
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
 import Header from "./Header";
 import Hero from "./Hero";
 import SocMedLinks from "./SocMedLinks";
@@ -40,6 +41,7 @@ class App {
     <main id="content" class="container mx-auto h-screen max-w-[1000px] px-20 xl:px-0">
       ${Hero()}
       ${AboutMe()}
+      ${Experience()}
     </main>  
   `;
   }

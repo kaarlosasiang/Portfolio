@@ -3,12 +3,12 @@ export default function Hero() {
     <section class="h-full flex flex-col justify-center gap-2 md:gap-5">
         <p class="text-primary text-lg font-FiraCode">Hi, my name is</p>
         <h1
-            class="transition-all duration-300 font-bold text-[#EDEDED] leading-[40px] text-[40px] md:text-[60px] lg:text-[80px]"
+            class="transition-all duration-300 font-semibold text-[#EDEDED] leading-[40px] text-[40px] md:text-[60px] 2xl:font-bold 2xl:lg:text-[80px]"
         >
         Kaarlo Sasiang
         </h1>
         <h2
-            class="transition-all duration-300 font-bold text-secondary leading-[40px] lg:leading-[60px] 2xl:leading-[80px] text-[30px] md:text-[50px] xl:text-[60px]"
+            class="transition-all duration-300 font-semibold text-secondary leading-[40px] lg:leading-[50px] 2xl:leading-[80px] text-[30px] md:text-[50px] 2xl:text-[60px]"
         >
         A frontend developer / IT student
         </h2>
