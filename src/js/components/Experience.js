@@ -2,7 +2,7 @@ import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 
 export default function Experience() {
-  generateSectionMarkup = () => {
+  const generateSectionMarkup = () => {
     return `
     <div class="px-20">
         ${SectionTitle("2", "Experience")}

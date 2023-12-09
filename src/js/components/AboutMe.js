@@ -12,7 +12,7 @@ export default function AboutMe() {
     "Tailwind CSS",
   ];
 
-  generateSectionMarkup = () => {
+  const generateSectionMarkup = () => {
     return `
     ${SectionTitle("1", "About Me")}
 
