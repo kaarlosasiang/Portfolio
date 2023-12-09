@@ -8,7 +8,7 @@ export default function Header() {
     },
     {
       title: "Experience",
-      url: "javascript:void(0);",
+      url: "#experience",
     },
     {
       title: "Work",
@@ -29,10 +29,10 @@ export default function Header() {
             <ul class="hidden md:flex items-center gap-10 text-sm font-FiraCode">
                 ${menuItems
                   .map(
-                    ({ title }, index) => `
+                    ({ title, url }, index) => `
                     <li>
                         <a
-                            href="#about-me"
+                            href="${url}"
                             class="transition-all duration-300 text-[#ededed] hover:text-primary"
                         >
                             <span class="text-primary">0${

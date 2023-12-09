@@ -1,8 +1,8 @@
-export default function Section(markup) {
+export default function Section(markup, id) {
   return `
     <section
         class="text-white flex flex-col justify-center py-20"
-        id="about-me"
+        id="${id}"
     >
         ${markup}
     </section>

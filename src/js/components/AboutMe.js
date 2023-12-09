@@ -82,5 +82,5 @@ export default function AboutMe() {
     `;
   };
 
-  return Section(generateSectionMarkup());
+  return Section(generateSectionMarkup(), "about-me");
 }
