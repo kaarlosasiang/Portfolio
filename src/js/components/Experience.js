@@ -8,7 +8,7 @@ export default function Experience() {
         ${SectionTitle("2", "Experience")}
 
         ${generateExperienceMarkup(
-          "UI Designer / Frontend Web Developer",
+          "UI / Frontend Web Developer",
           "Green Home Improvements Plus",
           "Dec 2023 - Present",
           [
