@@ -1,6 +1,6 @@
 export default function Hero() {
   return `
-    <section class="h-[500px] mt-20 md:mt-0 md:h-full flex flex-col justify-center gap-2 md:gap-5">
+    <section class="h-full flex flex-col justify-center gap-2 md:gap-5">
         <p class="text-primary text-lg font-FiraCode">Hi, my name is</p>
         <h1
             class="transition-all duration-300 font-semibold text-[#EDEDED] leading-[40px] text-[40px] md:text-[60px] 2xl:font-bold 2xl:lg:text-[80px]"
