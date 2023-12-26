@@ -9,6 +9,8 @@ export default function AboutMe() {
     "WordPress & Wix",
     "Procedural PHP",
     "Tailwind CSS",
+    "Material UI",
+    "ParcelJS",
     "ReactJS (Still Learning)",
   ];
 
