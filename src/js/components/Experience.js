@@ -19,7 +19,7 @@ export default function Experience() {
         )}
 
         ${generateExperienceMarkup(
-          "Frontend Web/Wordpress Developer",
+          "Frontend Web / Wordpress Developer",
           "Wozinga",
           "Jun 2021 - Nov 2023",
           [
