@@ -1,4 +1,5 @@
 import logo from "url:../../img/mylogo.png";
+import resume from "url:../../resume.pdf";
 
 export default function Header() {
   const menuItems = [
@@ -26,7 +27,7 @@ export default function Header() {
     >
         <img src="${logo}" class="max-w-[50px] max-h-[50px]" alt="" />
         <nav>
-            <ul class="hidden md:flex items-center gap-10 text-sm font-FiraCode">
+            <ul class="hidden lg:flex items-center gap-10 text-sm font-FiraCode">
                 ${menuItems
                   .map(
                     ({ title, url }, index) => `
@@ -47,19 +48,19 @@ export default function Header() {
                     class="transition-all duration-300 hover:-translate-y-[4px] hover:-translate-x-[4px]"
                 >
                     <a
-                    href="javascript:;"
+                    href="${resume}" target="_blank"
                     class="transition-all duration-300 text-primary border rounded px-4 py-2 hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
                     >Resume</a
                     >
                 </li>
-                </ul>
+              </ul>
 
-                <ul class="felx md:hidden items-center gap-10 text-sm">
+                <ul class="flex lg:hidden items-center gap-10 text-sm">
                 <li
                     class="transition-all duration-300 hover:-translate-y-[4px] hover:-translate-x-[4px]"
                 >
                     <a
-                    href="javascript:;"
+                    href="${resume}" target="_blank"
                     class="transition-all duration-300 text-primary border rounded px-4 py-2 hover:shadow-[3px_3px_0_0_rgba(61,241,218)]"
                     >Resume</a
                     >

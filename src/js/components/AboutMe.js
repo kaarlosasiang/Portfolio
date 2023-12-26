@@ -5,19 +5,19 @@ import Section from "./Section";
 export default function AboutMe() {
   const skills = [
     "JavaScript (ES6+)",
-    "ReactJS (Still Learning)",
     "HTML5 & CSS3",
     "WordPress & Wix",
     "Procedural PHP",
     "Tailwind CSS",
+    "ReactJS (Still Learning)",
   ];
 
   const generateSectionMarkup = () => {
     return `
     ${SectionTitle("1", "About Me")}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-10">
-        <div class="justify-center xl:justify-end flex md:hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10">
+        <div class="justify-center xl:justify-end flex lg:hidden">
             <div class="border border-primary rounded">
                 <img
                 src="${profile_picture}"
@@ -28,7 +28,7 @@ export default function AboutMe() {
         </div>
 
         <div>
-            <p class="font-light text-secondary text-justify">
+            <p class="font-light text-white/50 text-justify">
                 Hey there! I'm
                 <span class="text-primary">Kaarlo Ruy P. Sasiang</span>, a web
                 developer passionate about turning code into real experiences. I
@@ -51,14 +51,14 @@ export default function AboutMe() {
             </p>
 
             <ul
-                class="grid text-xs gap-2 mt-3 font-FiraCode"
+                class="grid text-sm gap-2 mt-3 font-FiraCode"
                 style="grid-template-columns: repeat(2, minmax(140px, 200px))"
             >
             ${skills
               .map(
                 (skill) => `
                 <li
-                class="skill-item relative flex items-center gap-3 font-light tracking-widest"
+                class="skill-item relative flex items-start gap-3 font-light tracking-widest"
                 >
                     ${skill}
                 </li>
@@ -68,7 +68,7 @@ export default function AboutMe() {
             </ul>
         </div>
 
-        <div class="justify-center xl:justify-end hidden md:flex">
+        <div class="justify-center xl:justify-end hidden lg:flex">
             <div class="border border-primary rounded absolute">
                 <img
                 src="${profile_picture}"

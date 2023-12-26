@@ -4,46 +4,68 @@ import SectionTitle from "./SectionTitle";
 export default function Experience() {
   const generateSectionMarkup = () => {
     return `
-    <div class="px-20">
+    <div class="flex flex-col gap-5">
         ${SectionTitle("2", "Experience")}
-        <div class="mt-5">
-            <h3 class="flex items-center gap-3 text-lg">Frontend Web/Wordpress Developer <span class="text-primary font-FiraCode"> @ Wozinga</span></h3>
-            <span class="text-xs font-FiraCode text-off-white">Jun 2021 - Nov 2023</span>
 
-            <ul class="my-3 flex flex-col gap-3">
-              <li class="task-item flex gap-2">
-                <p class="text-sm font-light">
-                  Specialized in creating compelling landing pages using WordPress and vanilla ParcelJS
-                </p>
-              </li>
-              <li class="task-item flex gap-2">
-                <p class="text-sm font-light">
-                  Focused on design and user experience, I turned concepts into visually appealing and functional pages
-                </p>
-              </li>
-            </ul>
-        </div>
+        ${generateExperienceMarkup(
+          "UI Designer / Frontend Web Developer",
+          "Green Home Improvements Plus",
+          "Dec 2023 - Present",
+          [
+            "Develop and implement dynamic user interfaces using ReactJS, ensuring a seamless and responsive user experience.",
+            "Independently translate project requirements into UI components, utilizing Figma for design reference and maintaining design consistency with Material-UI (MUI).",
+          ]
+        )}
 
-        <div class="mt-5">
-            <h3 class="flex items-center gap-3 text-lg">Frontend Web Developer <span class="text-primary font-FiraCode"> @ Accelerated Digital Delivery</span></h3>
-            <span class="text-xs font-FiraCode text-off-white">Jun 2021 - Nov 2023</span>
+        ${generateExperienceMarkup(
+          "Frontend Web/Wordpress Developer",
+          "Wozinga",
+          "Jun 2021 - Nov 2023",
+          [
+            "Specialized in creating compelling landing pages using WordPress and vanilla ParcelJS",
+            "Focused on design and user experience, I turned concepts into visually appealing and functional pages",
+          ]
+        )}
 
-            <ul class="my-3 flex flex-col gap-3">
-              <li class="task-item flex gap-2">
-                <p class="text-sm font-light">
-                  Specialized in creating compelling landing pages using WordPress and vanilla ParcelJS
-                </p>
-              </li>
-              <li class="task-item flex gap-2">
-                <p class="text-sm font-light">
-                  Focused on design and user experience, I turned concepts into visually appealing and functional pages
-                </p>
-              </li>
-            </ul>
-        </div>
+       ${generateExperienceMarkup(
+         "Frontend Web Developer",
+         "Accelerated Digital Delivery",
+         "Jan - May 2021",
+         [
+           "Develop company websites using Angular with Bootstrap.",
+           "Translate design mockups into responsive and dynamic web interfaces, collaborating for seamless back-end integration.",
+         ]
+       )}
+        
     </div>
     `;
   };
 
   return Section(generateSectionMarkup(), "experience");
+}
+
+function generateExperienceMarkup(title, company, date, tasks) {
+  return `
+    <div class="mt-5 max-w-[800px]">
+      <div class="flex items-center gap-0 md:gap-5 flex-wrap">
+        <h3 class="flex items-center gap-3 text-lg">${title}</h3>
+        <span class="text-primary font-FiraCode"> @ ${company}</span>
+      </div>
+      <span class="text-xs font-FiraCode text-off-white">${date}</span>
+
+      <ul class="my-3 flex flex-col gap-3">
+        ${tasks
+          .map(
+            (task) => `
+          <li class="task-item flex gap-2">
+            <p class="text-sm font-light">
+              ${task}
+            </p>
+          </li>
+        `
+          )
+          .join("")}
+      </ul>
+    </div>
+  `;
 }
