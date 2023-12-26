@@ -52,7 +52,7 @@ function generateExperienceMarkup(title, company, date, tasks, link) {
     <div class="mt-5 max-w-[800px]">
       <div class="flex items-center gap-0 md:gap-5 flex-wrap">
         <h3 class="flex items-center gap-3 text-lg">${title}</h3>
-        <a href="${link}" target="_blank"><span class="text-primary font-FiraCode"> @ ${company}</span></a>
+        <a href="${link}" class="text-primary hover:underline" target="_blank"><span class="text-primary font-FiraCode"> @ ${company}</span></a>
       </div>
       <span class="text-xs font-FiraCode text-off-white">${date}</span>
 
