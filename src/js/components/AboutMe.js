@@ -6,12 +6,14 @@ export default function AboutMe() {
   const skills = [
     "JavaScript (ES6+)",
     "HTML5 & CSS3",
-    "WordPress & Wix",
+    "ReactJS",
     "Procedural PHP",
+    "ParcelJS",
+    "PWA's",
     "Tailwind CSS",
     "Material UI",
-    "ParcelJS",
-    "ReactJS (Still Learning)",
+    "Bootstrap",
+    "WordPress & Wix",
   ];
 
   const generateSectionMarkup = () => {
