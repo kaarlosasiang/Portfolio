@@ -14,7 +14,8 @@ export default function Experience() {
           [
             "Develop and implement dynamic user interfaces using ReactJS, ensuring a seamless and responsive user experience.",
             "Independently translate project requirements into UI components, utilizing Figma for design reference and maintaining design consistency with Material-UI (MUI).",
-          ]
+          ],
+          "https://greenhomeimprovements.com/"
         )}
 
         ${generateExperienceMarkup(
@@ -24,7 +25,8 @@ export default function Experience() {
           [
             "Specialized in creating compelling landing pages using WordPress and vanilla ParcelJS",
             "Focused on design and user experience, I turned concepts into visually appealing and functional pages",
-          ]
+          ],
+          "https://wozinga.com"
         )}
 
        ${generateExperienceMarkup(
@@ -34,7 +36,8 @@ export default function Experience() {
          [
            "Develop company websites using Angular with Bootstrap.",
            "Translate design mockups into responsive and dynamic web interfaces, collaborating for seamless back-end integration.",
-         ]
+         ],
+         "https://accelerateddigitaldelivery.co.uk/"
        )}
         
     </div>
@@ -44,12 +47,12 @@ export default function Experience() {
   return Section(generateSectionMarkup(), "experience");
 }
 
-function generateExperienceMarkup(title, company, date, tasks) {
+function generateExperienceMarkup(title, company, date, tasks, link) {
   return `
     <div class="mt-5 max-w-[800px]">
       <div class="flex items-center gap-0 md:gap-5 flex-wrap">
         <h3 class="flex items-center gap-3 text-lg">${title}</h3>
-        <span class="text-primary font-FiraCode"> @ ${company}</span>
+        <a href="${link}" target="_blank"><span class="text-primary font-FiraCode"> @ ${company}</span></a>
       </div>
       <span class="text-xs font-FiraCode text-off-white">${date}</span>
 

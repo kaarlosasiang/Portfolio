@@ -38,7 +38,7 @@ class App {
       </div>
     </div>
 
-    <main id="content" class="container mx-auto h-screen max-w-[1000px] px-10 md:px-32 lg:px-20 xl:px-0">
+    <main id="content" class="container mx-auto h-screen max-w-[1000px] px-5 md:px-32 lg:px-20 xl:px-0">
       ${Hero()}
       ${AboutMe()}
       ${Experience()}
