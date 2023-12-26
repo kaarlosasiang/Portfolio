@@ -33,7 +33,7 @@ export default function AboutMe() {
                 <span class="text-primary">Kaarlo Ruy P. Sasiang</span>, a web
                 developer passionate about turning code into real experiences. I
                 started playing with HTML, CSS, JavaScript, and PHP back in Grade
-                12, and since then, I've been part of two companies as a frontend
+                12, and since then, I've been part of three companies as a frontend
                 web developer.
 
                 <br />
