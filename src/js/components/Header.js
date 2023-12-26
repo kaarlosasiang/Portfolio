@@ -23,7 +23,7 @@ export default function Header() {
 
   return `
     <header
-    class="z-10 bg-main-dark/[.30] flex items-center justify-between h-[80px] px-10 md:px-14 w-full fixed top-0 transition-all duration-300"
+    class="z-10 bg-main-dark/[.30] flex items-center justify-between h-[80px] px-5 md:px-14 w-full fixed top-0 transition-all duration-300"
     >
         <img src="${logo}" class="max-w-[50px] max-h-[50px]" alt="" />
         <nav>
