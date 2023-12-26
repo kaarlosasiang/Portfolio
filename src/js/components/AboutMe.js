@@ -40,7 +40,7 @@ export default function AboutMe() {
                 <br />
 
                 Currently, I'm deep into mastering ReactJS. Beyond work, I'm also
-                a proud member of the development team at
+                a proud member of the web development team at
                 <span class="text-primary">CodeByters</span>, a school
                 organization where we're all about making cool things happen with
                 code.
