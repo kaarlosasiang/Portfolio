@@ -28,7 +28,7 @@ export default function AboutMe() {
         </div>
 
         <div>
-            <p class="font-light text-white/50 text-justify">
+            <p class="text-secondary text-justify">
                 Hey there! I'm
                 <span class="text-primary">Kaarlo Ruy P. Sasiang</span>, a web
                 developer passionate about turning code into real experiences. I
