@@ -7,16 +7,16 @@ export default function Experience() {
     <div class="flex flex-col gap-5">
         ${SectionTitle("2", "Experience")}
 
-        ${generateExperienceMarkup(
-          "UI / Frontend Web Developer",
-          "Green Home Improvements Plus",
-          "Dec 2023 - Present",
-          [
-            "Develop and implement dynamic user interfaces using ReactJS, ensuring a seamless and responsive user experience.",
-            "Independently translate project requirements into UI components, utilizing Figma for design reference and maintaining design consistency with Material-UI (MUI).",
-          ],
-          "https://greenhomeimprovements.com/"
-        )}
+        // ${generateExperienceMarkup(
+        //   "UI / Frontend Web Developer",
+        //   "Green Home Improvements Plus",
+        //   "Dec 2023 - Present",
+        //   [
+        //     "Develop and implement dynamic user interfaces using ReactJS, ensuring a seamless and responsive user experience.",
+        //     "Independently translate project requirements into UI components, utilizing Figma for design reference and maintaining design consistency with Material-UI (MUI).",
+        //   ],
+        //   "https://greenhomeimprovements.com/"
+        // )}
 
         ${generateExperienceMarkup(
           "Frontend Web / Wordpress Developer",
